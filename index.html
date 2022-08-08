@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Calendar</title>
+    <style>
+
+        table {
+            display: flex;
+            flex-direction: column;
+        }
+
+        td, th{ 
+             border: rgb(208, 206, 202) 1px solid;
+             
+            }
+
+        tr {
+            display: flex;
+            justify-content: center;
+            align-items:flex-start;
+        }
+
+        td{
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            color:#6B6B6B;
+            width: 143px;
+            height: 120px;
+            padding: 8px;
+            font-size: 13px;
+        }    
+        
+        .myTable {
+        margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div id="btn">
+            <button class="btn"> <a href="#" class="open-create" >Добавить</a></button>
+            <button class="btn"><a href="#" class="update-create">Обновить</a></button> 
+        </div>
+        
+        <img  src="img/Vector.png" alt="" id="vector">
+        <input id="input" class="search"' type="text" spellcheck="false" placeholder="Событие, дата или участник " >
+    </div>
+    
+
+    <div class="month">
+        <button class="btn-prev">
+            <span class="prev"><img src="/img/button-icon-l.png" alt=""></span>
+        </button>
+          
+          <p class="p" id="month">Ноябрь  <span>2021</span></p>
+
+          <button class="btn-next">
+            <span class="next"><img src="/img/button-icon-r.png" alt=""></span>
+          </button>
+          
+          <button class="today">Сегодня</button>
+    </div>
+
+     <div id="days">
+        <table class="myTable"> 
+            <thead>
+                <tr>
+                       <td class="td"> Понедельник, 27 <a href="#" class="open-popup">Добавить событие</a> </td>
+                     <td class="td">Вторник, 28 <a href="#" class="open-popup">Добавить событие</a></td>
+                     <td>Среда, 29 <a href="#" class="open-popup">Добавить событие</a></td>
+                     <td class="blue">Четверг,30
+                        <li class="event">Шашлыки</li>
+                        <li class="people">Филипп Коров,
+                            Дмитрий Табасков</li>
+                     </td>
+                     <td>Пятница, 1<a href="#" class="open-popup">Добавить событие</a></td>
+                     <td>Суббота, 2<a href="#" class="open-popup">Добавить событие</a></td>
+                     <td>Воскресенье, 3<a href="#" class="open-popup">Добавить событие</a></td>
+                </tr>
+            </thead>
+
+            <tbody> 
+                <tr>
+                    <td>4<a href="#" class="open-popup">Добавить событие</a></td>
+                    <td>5<a href="#" class="open-popup">Добавить событие</a></td>
+                    <td>6<a href="#" class="open-popup">Добавить событие</a></td>
+                    <td>7<a href="#" class="open-popup">Добавить событие</a></td>
+                    <td>8<a href="#" class="open-popup">Добавить событие</a></td>
+                    <td>9<a href="#" class="open-popup">Добавить событие</a></td>
+                    <td>10<a href="#" class="open-popup">Добавить событие</a></td>
+                    
+                </tr>
+
+                 <tr>
+                    <td>11<a href="#" class="open-popup">Добавить событие</a></td>
+                    <td>12<a href="#" class="open-popup">Добавить событие</a></td>
+                    <td>13<a href="#" class="open-popup">Добавить событие</a></td>
+                    <td>14<a href="#" class="open-popup">Добавить событие</a></td>
+                    <td class="blue">15
+                        <li class="event">Летний лагерь </li>
+                        <li class="people">Алексей
+                                            Маральный</li>
+                    </td>
+                    <td>16<a href="#" class="open-popup">Добавить событие</a></td>
+                    <td>17<a href="#" class="open-popup">Добавить событие</a></td>
+                </tr> 
+
+                <tr>
+                     <td class="blue">18 <li class="event"> Аква кутеж</li>
+                            <li class="people"> Михаил Шустин,
+                                                Владимир Пупкин,
+                                                Дмитрий Медев </li>
+                        </td>
+                     <td>19<a href="#" class="open-popup">Добавить событие</a></td>
+                     <td>20<a href="#" class="open-popup">Добавить событие</a></td>
+                     <td>21<a href="#" class="open-popup">Добавить событие</a></td>
+                     <td>22<a href="#" class="open-popup">Добавить событие</a></td>
+                     <td>23<a href="#" class="open-popup">Добавить событие</a></td>
+                     <td>24<a href="#" class="open-popup">Добавить событие</a></td>
+                </tr> 
+
+                <tr>
+                    <td>25<a href="#" class="open-popup">Добавить событие</a></td>
+                     <td>26<a href="#" class="open-popup">Добавить событие</a></td>
+                     <td>27<a href="#" class="open-popup">Добавить событие</a></td>
+                     <td>28<a href="#" class="open-popup">Добавить событие</a></td>
+                     <td>29<a href="#" class="open-popup">Добавить событие</a></td>
+                     <td>30<a href="#" class="open-popup">Добавить событие</a></td>
+                     <td></td>
+                </tr> 
+            </tbody> 
+        </table>
+
+
+        <div class="popup__bg"> 
+            <form class="popup">
+                    <img src="img/cross.svg" class="close-popup">
+                    <input class="label__text" type="text" name="name" placeholder="Событие">
+                    <input class="label__text" type="text" name="name" placeholder="Дата, месяц, год">
+                    <input class="label__text" type="text" name="name" placeholder="Имя участника">
+                    <textarea name="message">Ваше сообщение</textarea>
+                <div class="btnForm">
+                    <button  type="submit">Готово</button>
+                    <button  type="submit">Удалить</button>
+                </div>
+             </form>
+        </div>  
+
+
+        <div class="create"> 
+            <form class="create-form">
+                <img src="img/cross.svg" class="close-create">
+                <input class="label__text" type="text" name="name" placeholder="Событие">
+                <div class="btn-create">
+                    <button  type="submit">Создать</button>
+                 </div>
+            </form>
+        </div>  
+        
+        
+    <script src="script.js"></script>
+</body>
+</html>
